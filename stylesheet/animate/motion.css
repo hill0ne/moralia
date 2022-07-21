@@ -1,0 +1,34 @@
+main .section_wrap .section-video.is-active {
+  height: 0;
+  transition: all 1s;
+}
+
+.footer.is-active {
+  display: block;
+}
+
+/* image hover */
+
+main
+  .section_wrap
+  .section-contents
+  .slider_wrap
+  ul.list
+  li
+  .image_wrap:hover
+  img {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+main
+  .section_wrap
+  .section-contents
+  .slider_wrap
+  ul.list
+  li
+  .image_wrap:hover
+  + h2.page-title {
+  font-size: 7rem;
+  transition: all 1s;
+}

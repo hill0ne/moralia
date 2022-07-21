@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant:wght@300&display=swap");
 
 @font-face {
   font-family: "EarlyFontDiary";
@@ -8,8 +8,67 @@
   font-style: normal;
 }
 
-body {
+:root {
   --font-family-cormorant: "Cormorant", sans-serif;
+  --font-family-cinzel: "Cinzel", sans-serif;
+  --font-family-diary: EarlyFontDiary, sans-serif;
   --color-white: #fff;
   font-size: 10px;
+  text-transform: uppercase;
+}
+
+a,
+span,
+h2 {
+  color: var(--color-white);
+}
+
+main .section_wrap .section-contents .slider_wrap ul.list li h2.page-title {
+  align-self: center;
+  font-size: 8rem;
+  font-family: var(--font-family-cinzel);
+  font-weight: 300;
+  letter-spacing: 1rem;
+  white-space: nowrap;
+  transition: all 1s;
+  z-index: 1;
+}
+
+main
+  .section_wrap
+  .section-contents
+  .slider_wrap
+  ul.list
+  li
+  span.product-number {
+  position: absolute;
+  top: 8rem;
+  left: -2.2rem;
+  font-size: 1.5rem;
+  transform: rotate(-90deg);
+  color: var(--color-white);
+  opacity: 0.5;
+}
+
+main .section_wrap .section-contents .slider_wrap ul.list li span.page-number {
+  position: absolute;
+  top: 6rem;
+  right: 0rem;
+  font-size: 1.5rem;
+  transform: rotate(-90deg);
+  color: var(--color-white);
+  opacity: 0.5;
+}
+
+.footer .footer-inner_wrap ul,
+.footer .footer-inner_wrap address {
+  display: flex;
+}
+
+.footer .footer-inner_wrap ul li,
+.footer .footer-inner_wrap address a {
+  display: flex;
+  margin: 0 1.5rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
 }

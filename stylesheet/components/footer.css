@@ -1,0 +1,24 @@
+.footer {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  margin-top: -11.5rem;
+  font-size: 1.5rem;
+}
+
+.footer .footer-inner_wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.footer .footer-inner_wrap .sns-list,
+.footer .footer-inner_wrap address {
+  opacity: 0.5;
+}
