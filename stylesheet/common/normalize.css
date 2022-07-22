@@ -9,6 +9,9 @@
 }
 
 :root {
+  --slide-whole-width: calc(60rem * 10);
+  --slide-sequence-width: 60rem;
+  --slide-sequence-width-active: 40rem;
   --font-family-cormorant: "Cormorant", sans-serif;
   --font-family-cinzel: "Cinzel", sans-serif;
   --font-family-diary: EarlyFontDiary, sans-serif;
@@ -23,9 +26,12 @@ h2 {
   color: var(--color-white);
 }
 
-main .section_wrap .section-contents .slider_wrap ul.list li h2.page-title {
+main .section_wrap .section-contents .slide_wrap ul.list li h2.page-title {
+  display: inline-block;
   align-self: center;
+  width: 80rem;
   font-size: 8rem;
+  text-align: center;
   font-family: var(--font-family-cinzel);
   font-weight: 300;
   letter-spacing: 1rem;
@@ -37,23 +43,23 @@ main .section_wrap .section-contents .slider_wrap ul.list li h2.page-title {
 main
   .section_wrap
   .section-contents
-  .slider_wrap
+  .slide_wrap
   ul.list
   li
   span.product-number {
   position: absolute;
-  top: 8rem;
-  left: -2.2rem;
+  top: 6rem;
+  left: -7rem;
   font-size: 1.5rem;
   transform: rotate(-90deg);
   color: var(--color-white);
   opacity: 0.5;
 }
 
-main .section_wrap .section-contents .slider_wrap ul.list li span.page-number {
+main .section_wrap .section-contents .slide_wrap ul.list li span.page-number {
   position: absolute;
-  top: 6rem;
-  right: 0rem;
+  top: 5rem;
+  right: -5rem;
   font-size: 1.5rem;
   transform: rotate(-90deg);
   color: var(--color-white);

@@ -81,39 +81,40 @@ main .section_wrap .section-contents {
   transition: all 1s;
 }
 
-main .section_wrap .section-contents .slider_wrap {
+main .section_wrap .section-contents .slide_wrap {
   display: flex;
   justify-content: space-between;
   position: absolute;
   top: 0;
-  width: 80rem * 9;
+  width: var(--slide-whole-width);
   height: 50rem;
   transition: all 0.5s;
 }
 
-main .section_wrap .section-contents .slider_wrap ul.list {
+main .section_wrap .section-contents .slide_wrap ul.list {
   display: flex;
+  width: 100%;
   height: 100%;
 }
 
-main .section_wrap .section-contents .slider_wrap ul.list li {
+main .section_wrap .section-contents .slide_wrap ul.list li {
   position: relative;
   display: flex;
   justify-content: center;
-  width: 60rem;
+  width: var(--slide-sequence-width);
   height: 50rem;
-  margin: 0 18rem;
+  margin: 0 15rem;
 }
 
-main .section_wrap .section-contents .slider_wrap ul.list li .image_wrap {
+main .section_wrap .section-contents .slide_wrap ul.list li .image_wrap {
   position: absolute;
-  width: 50rem;
+  width: 100%;
   height: 50rem;
   overflow: hidden;
   transition: all 1s;
 }
 
-main .section_wrap .section-contents .slider_wrap ul.list li .image_wrap img {
+main .section_wrap .section-contents .slide_wrap ul.list li .image_wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
