@@ -1,0 +1,13 @@
+.section_wrap .section-video.is-active {
+  height: 0;
+  transition: all 1s;
+}
+
+.footer.is-active {
+  display: block;
+}
+
+.section-contents .slide_wrap ul.list li.is-active span.page-number,
+.section-contents .slide_wrap ul.list li.is-active span.product-number {
+  display: none;
+}

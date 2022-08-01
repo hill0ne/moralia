@@ -1,20 +1,21 @@
-main .section_wrap .section-video h2.title {
+/* 메인 페이지 이동  */
+.section_wrap .section-video h2.title {
   opacity: 1;
   animation: show-down-to-up 1.8s;
 }
 
-main .section_wrap .section-video .text_wrap {
+.section_wrap .section-video .text_wrap {
   opacity: 1;
   animation: show-down-to-up 2.2s;
 }
 
-main .section_wrap .section-video h2.title.is-active {
+.section_wrap .section-video h2.title.is-active {
   opacity: 0;
   transform: translate(-50%, 0);
   animation: disappear-down-to-up 0.5s;
 }
 
-main .section_wrap .section-video .text_wrap.is-active {
+.section_wrap .section-video .text_wrap.is-active {
   opacity: 0;
   transform: translate(-50%, 0);
   animation: disappear-down-to-up 0.3s;

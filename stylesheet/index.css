@@ -1,0 +1,260 @@
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 3rem 0;
+  background: transparent;
+  z-index: 100;
+}
+
+.header .header-inner_wrap {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header .header-inner_wrap a {
+  color: var(--color-white);
+  letter-spacing: 0.2rem;
+  font-family: var(--font-family-cormorant);
+}
+
+.header .header-inner_wrap a.logo {
+  float: left;
+  font-size: 2.8rem;
+}
+
+.header .header-inner_wrap a:last-child {
+  display: block;
+  float: right;
+  font-size: 1.7rem;
+}
+
+.header .header-inner_wrap button {
+  cursor: pointer;
+  width: 6rem;
+  border: none;
+  background-color: transparent;
+}
+
+.header .header-inner_wrap button span {
+  display: block;
+  width: 100%;
+  height: 0.1rem;
+  background: black;
+  margin: 0.8rem 0;
+  background: var(--color-white);
+}
+
+/* section */
+/* section-video */
+
+main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+main .section_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background: #272727;
+}
+
+main .section_wrap .section-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+main .section_wrap .section-video .video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+}
+
+main .section_wrap .section-video h2.title {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-size: 4rem;
+  font-weight: 300;
+  font-family: var(--font-family-cormorant);
+  letter-spacing: 0.4rem;
+  text-align: center;
+  transform: translate(-50%, -20%);
+  z-index: 10;
+}
+
+main .section_wrap .section-video .text_wrap {
+  position: absolute;
+  display: inline-block;
+  width: 38%;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+
+main .section_wrap .section-video p {
+  position: relative;
+  font-size: 1.3rem;
+  font-family: var(--font-family-diary);
+  line-height: 2.2rem;
+  text-transform: none;
+  color: var(--color-white);
+}
+
+main .section_wrap .section-video p::before {
+  content: "[";
+  padding-right: 3rem;
+}
+
+main .section_wrap .section-video p::after {
+  content: "]";
+  margin-left: 3rem;
+}
+
+/* section-contents */
+
+main .section_wrap .section-contents {
+  position: relative;
+  width: 100%;
+  height: 82%;
+  margin-top: 10rem;
+  transition: all 1s;
+}
+
+.section-contents .slide_wrap {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  height: 50rem;
+  transition: all 0.5s;
+  /* overflow: hidden; */
+}
+
+.section-contents .slide_wrap ul.list {
+  display: flex;
+  padding: 0;
+  transform: translateX(-112rem);
+}
+
+.section-contents .slide_wrap .list li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 50rem;
+  height: 40rem;
+  margin: 0 3rem;
+}
+
+.section-contents .slide_wrap ul.list li .image_wrap {
+  position: absolute;
+  width: 50rem;
+  height: 40rem;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.section-contents .slide_wrap ul.list li .image_wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 1s;
+}
+
+.section-contents .slide_wrap .list li .image_wrap:hover img {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.section-contents .slide_wrap .list li .image_wrap:hover h2.page-title {
+  font-size: 3.5rem;
+  transition: all 1s;
+}
+
+/* 슬라이드 공통 스타일 */
+.section_wrap .section-contents .slide_wrap .list li .page-title {
+  display: inline-block;
+  align-self: center;
+  width: 80rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--font-family-cinzel);
+  font-weight: 300;
+  letter-spacing: 1rem;
+  white-space: nowrap;
+  transition: all 1s;
+  z-index: 1;
+}
+
+.section_wrap .section-contents .slide_wrap .list li .product-number {
+  position: absolute;
+  top: 6rem;
+  left: -6rem;
+  font-size: 1.5rem;
+  transform: rotate(-90deg);
+  color: var(--color-white);
+  opacity: 0.5;
+}
+
+.section_wrap .section-contents .slide_wrap ul.list li .page-number {
+  position: absolute;
+  top: 5rem;
+  right: -4rem;
+  font-size: 1.5rem;
+  transform: rotate(-90deg);
+  color: var(--color-white);
+  opacity: 0.5;
+}
+
+/* footer */
+.footer {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  margin-top: -11.5rem;
+  font-size: 1.5rem;
+  background-color: white;
+}
+
+.footer .footer-inner_wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  /* background: blue; */
+}
+
+.footer .footer-inner_wrap .sns-list,
+.footer .footer-inner_wrap address {
+  opacity: 0.5;
+}
+
+/* footer 공통 스타일 */
+.footer-inner_wrap ul,
+.footer-inner_wrap address {
+  display: flex;
+}
+
+.footer-inner_wrap ul li,
+.footer-inner_wrap address a {
+  display: flex;
+  margin: 0 1.5rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+}

@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./stylesheet/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./stylesheet/reset.css" />
+    <link rel="stylesheet" href="./stylesheet/index.css" />
+    <link rel="stylesheet" href="./stylesheet/motion.css" />
+    <link rel="stylesheet" href="./stylesheet/animation.css" />
+
     <script src="./js/library/jquery-3.6.0.min.js"></script>
-    <script src="./js/handleWheel.js" defer></script>
+    <script src="./js/handleSlide.js" defer></script>
+    <script src="./js/index.js" defer></script>
     <title>Moralia</title>
 </head>
 <body>
@@ -17,7 +25,7 @@
                 <span class="line-A"></span>
                 <span class="line-B"></span>
             </button>
-            <a href="#" aria-label="상담 신청 제출">GET IN TOUCH</a>
+            <a href="#" aria-label="상담 신청">GET IN TOUCH</a>
         </div>
     </header>
     <main>
@@ -38,70 +46,83 @@
                         unique as you are.</p>
                 </div>
             </section>
+<!-- 
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                  <div class="swiper-slide">Slide 6</div>
+                  
+                  <div class="swiper-slide">Slide 7</div>
+                  
+                  <div class="swiper-slide">Slide 8</div>
+                  
+                  <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div> -->
+
+
             <section class="section-contents">
-                <div class="slide_wrap">
+                <div class="slide_wrap swiper">
                     <ul class="list">
-                        <li data-index="9" class="is-active clone-element">
+                        <li data-index="9" class=" swiper-slide">
                             <span class="product-number">PRODUCTS 1</span>
                             <div class="image_wrap"><img src="./assets/img/0100000-16481335330bTsZ-medium.jpg" alt="애쉬브라운 컬러의 벽과 문" /></div>
                             <h2 class="page-title">DOORS AND WALLS</h2>
                             <span class="page-number">09 ㅡ 09</span>
                         </li>
-                        <li data-index="1">
+                        <li data-index="1" class="">
                             <span class="product-number">PRODUCTS 4</span>
                             <div class="image_wrap"><img src="./assets/img/002-post-1648041204eiUlB-medium.png" alt="그레이톤의 모던한 주방" /></div>
                             <h2 class="page-title">DREAM KITCHEN</h2>
                             <span class="page-number">01 ㅡ 09</span>
                         </li>
-                        <li data-index="2" class="is-active is-active-right">
+                        <li data-index="2" class="swiper-slide">
                             <span class="product-number">PRODUCTS 3</span>
                             <div class="image_wrap"><img src="./assets/img/245-walk-in-closet-03-001-post-1648048118or8Wk-medium.jpg" alt="벽면에 신발 진열대가 있는 브라운 계열의 드레스룸" /></div>
                             <h2 class="page-title">WALK-IN-CLOSET</h2>
                             <span class="page-number">02 ㅡ 09</span>
                         </li>
-                        <li data-index="3" class="is-active is-active-right">
+                        <li data-index="3" class="swiper-slide">
                             <span class="product-number">PRODUCTS 6</span>
                             <div class="image_wrap"><img src="./assets/img/cam001-2-1648115280ylbAz-medium.jpg" alt="회색 소파와 우드 책장이 있는 모던한 거실" /></div>
                             <h2 class="page-title">LIVING ROOM</h2>
                             <span class="page-number">03 ㅡ 09</span>
                         </li>
-                        <li data-index="4" class="is-active is-active-right">
+                        <li data-index="4" class="swiper-slide">
                             <span class="product-number">PRODUCTS 3</span>
                             <div class="image_wrap"><img src="./assets/img/cam001-1648120133c8xbX-medium.jpg" alt="우드톤과 그레이톤의 서재 및 작업 공간" /></div>
                             <h2 class="page-title">HOME OFFICE</h2>
                             <span class="page-number">04 ㅡ 09</span>
                         </li>
-                        <li data-index="5">
+                        <li data-index="5" class="swiper-slide">
                             <span class="product-number">PRODUCTS 2</span>
                             <div class="image_wrap"><img src="./assets/img/001-1648122135AlHkQ-medium.jpg" alt="침대와 협탁, 액자가 있는 그레이톤의 침실" /></div>
                             <h2 class="page-title">BEDROOM</h2>
                             <span class="page-number">05 ㅡ 09</span>
                         </li>
-                        <li data-index="6">
+                        <li data-index="6" class="swiper-slide">
                             <span class="product-number">PRODUCTS 1</span>
                             <div class="image_wrap"><img src="./assets/img/cam001-1648834303fE4UA-medium.jpg" alt="가운데에 긴 테이블과 조명이 달려있는 그레이톤의 다이닝룸" /></div>
                             <h2 class="page-title">DINING ROOM</h2>
                             <span class="page-number">06 ㅡ 09</span>
                         </li>
-                        <li data-index="7">
+                        <li data-index="7" class="swiper-slide">
                             <span class="product-number">PRODUCTS 4</span>
                             <div class="image_wrap"><img src="./assets/img/004-2-1648834710EPQ5M-medium.jpg" alt="화이트 마블이 섞인 블랙 대리석의 화장실" /></div>
                             <h2 class="page-title">BATHROOM</h2>
                             <span class="page-number">07 ㅡ 09</span>
                         </li>
-                        <li data-index="8">
+                        <li data-index="8" class="swiper-slide">
                             <span class="product-number">PRODUCTS 1</span>
                             <div class="image_wrap"><img src="./assets/img/002-2-1648130336a77L8-medium.jpg" alt="파란색 책상과 서랍장이 있는 자녀방" /></div>
                             <h2 class="page-title">CHILDREN'S ROOM</h2>
                             <span class="page-number">08 ㅡ 09</span>
                         </li>
-                        <li data-index="9">
-                            <span class="product-number">PRODUCTS 1</span>
-                            <div class="image_wrap"><img src="./assets/img/0100000-16481335330bTsZ-medium.jpg" alt="애쉬브라운 컬러의 벽과 문" /></div>
-                            <h2 class="page-title">DOORS AND WALLS</h2>
-                            <span class="page-number">09 ㅡ 09</span>
-                        </li>
                     </ul>
+
                 </div>
             </section>
         </div>
@@ -121,5 +142,6 @@
             </address>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>

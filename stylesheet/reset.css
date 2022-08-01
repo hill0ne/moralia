@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant:wght@300&display=swap");
+
+@font-face {
+  font-family: "EarlyFontDiary";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-family-cormorant: "Cormorant", sans-serif;
+  --font-family-cinzel: "Cinzel", sans-serif;
+  --font-family-diary: EarlyFontDiary, sans-serif;
+  --color-white: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+a,
+span,
+h2 {
+  color: var(--color-white);
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #272727;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  overflow-y: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+address,
+em,
+i {
+  font-style: normal;
+}
