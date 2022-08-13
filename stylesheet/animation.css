@@ -10,13 +10,13 @@
 }
 
 .section_wrap .section-video h2.title.is-active {
-  opacity: 0;
+  display: none;
   transform: translate(-50%, 0);
   animation: disappear-down-to-up 0.5s;
 }
 
 .section_wrap .section-video .text_wrap.is-active {
-  opacity: 0;
+  display: none;
   transform: translate(-50%, 0);
   animation: disappear-down-to-up 0.3s;
 }

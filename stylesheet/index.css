@@ -3,7 +3,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  padding: 3rem 0;
+  padding: 4rem 0;
   background: transparent;
   z-index: 100;
 }
@@ -34,34 +34,40 @@
 .header .header-inner_wrap button {
   cursor: pointer;
   width: 6rem;
+  height: 2rem;
   border: none;
-  background-color: transparent;
+  background: transparent;
 }
 
 .header .header-inner_wrap button span {
+  position: relative;
   display: block;
   width: 100%;
   height: 0.1rem;
-  background: black;
-  margin: 0.8rem 0;
   background: var(--color-white);
 }
 
-/* section */
-/* section-video */
-
-main {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+.header .header-inner_wrap button .a {
+  top: 0.5rem;
 }
 
-main .section_wrap {
+.header .header-inner_wrap button .b {
+  bottom: 0.5rem;
+}
+
+/* index 영역 */
+main {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 85%;
+  height: 100%;
+}
+
+main .section_wrap {
+  top: 0;
+  left: 0;
+  height: 100%;
   background: #272727;
 }
 
@@ -122,12 +128,11 @@ main .section_wrap .section-video p::after {
   margin-left: 3rem;
 }
 
-/* section-contents */
-
+/* contents 영역 */
 main .section_wrap .section-contents {
   position: relative;
   width: 100%;
-  height: 82%;
+  height: 85%;
   margin-top: 10rem;
   transition: all 1s;
 }
@@ -139,7 +144,6 @@ main .section_wrap .section-contents {
   top: 0;
   height: 50rem;
   transition: all 0.5s;
-  /* overflow: hidden; */
 }
 
 .section-contents .slide_wrap ul.list {
@@ -218,41 +222,40 @@ main .section_wrap .section-contents {
   opacity: 0.5;
 }
 
-/* footer */
+/* footer 영역 */
 .footer {
   display: none;
-  position: relative;
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 10rem;
-  margin-top: -11.5rem;
+  padding: 4rem 0;
   font-size: 1.5rem;
-  background-color: white;
+  background-color: transparent;
 }
 
-.footer .footer-inner_wrap {
+.footer .footer_inner_wrap {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 95%;
+  width: 90%;
   height: 100%;
   margin: 0 auto;
-  /* background: blue; */
 }
 
-.footer .footer-inner_wrap .sns-list,
-.footer .footer-inner_wrap address {
-  opacity: 0.5;
-}
-
-/* footer 공통 스타일 */
-.footer-inner_wrap ul,
-.footer-inner_wrap address {
+.footer_inner_wrap ul,
+.footer_inner_wrap address {
+  color: #fff;
   display: flex;
 }
 
-.footer-inner_wrap ul li,
-.footer-inner_wrap address a {
+.footer .footer_inner_wrap .sns-list,
+.footer .footer_inner_wrap address {
+  opacity: 0.5;
+}
+
+.footer_inner_wrap ul li,
+.footer_inner_wrap address a {
   display: flex;
   margin: 0 1.5rem;
   font-size: 1.4rem;
