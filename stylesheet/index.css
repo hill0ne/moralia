@@ -129,7 +129,7 @@ main .section_wrap .section-video p::after {
 }
 
 /* contents 영역 */
-main .section_wrap .section-contents {
+.section_wrap .section-contents {
   position: relative;
   width: 100%;
   height: 85%;
@@ -137,75 +137,87 @@ main .section_wrap .section-contents {
   transition: all 1s;
 }
 
-.section-contents .slide_wrap {
-  display: flex;
-  justify-content: space-between;
+.slide_wrap {
   position: absolute;
   top: 0;
+  width: 100%;
   height: 50rem;
   transition: all 0.5s;
+  transform: translateX(30%);
 }
 
-.section-contents .slide_wrap ul.list {
+.slide_wrap .swiper-wrapper {
+  margin: 0;
+}
+
+.slide_wrap .swiper-slide {
   display: flex;
-  padding: 0;
-  transform: translateX(-112rem);
+  align-items: center;
+  top: 25%;
+  height: 50%;
 }
 
-.section-contents .slide_wrap .list li {
+.slide_wrap .swiper-wrapper .swiper-slide .image_wrap {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  width: 50rem;
-  height: 40rem;
-  margin: 0 3rem;
-}
-
-.section-contents .slide_wrap ul.list li .image_wrap {
-  position: absolute;
-  width: 50rem;
-  height: 40rem;
-  transition: all 1s;
+  height: 100%;
   overflow: hidden;
 }
 
-.section-contents .slide_wrap ul.list li .image_wrap img {
+.slide_wrap ul.list li .image_wrap img {
+  position: relative;
+  display: block;
   width: 100%;
+  height: auto;
+  object-fit: cover;
+  transform: translateX(-15%);
+}
+
+.slide_wrap .list li .image_wrap:hover img {
+  transform: translateX(-15%) scale(1.1);
+  transition: all 1s;
+}
+
+/* active 상태 슬라이드 */
+.slide_wrap .swiper-wrapper .swiper-slide.swiper-slide-active {
+  top: 0;
   height: 100%;
-  object-fit: contain;
-  transition: all 1s;
+  margin: 0rem;
 }
 
-.section-contents .slide_wrap .list li .image_wrap:hover img {
-  transform: scale(1.1);
-  transition: all 1s;
+.slide_wrap .swiper-wrapper .swiper-slide.swiper-slide-active .image_wrap img {
+  width: auto;
+  height: 100%;
+  transition: all 2s;
 }
 
-.section-contents .slide_wrap .list li .image_wrap:hover h2.page-title {
-  font-size: 3.5rem;
-  transition: all 1s;
-}
-
-/* 슬라이드 공통 스타일 */
-.section_wrap .section-contents .slide_wrap .list li .page-title {
-  display: inline-block;
-  align-self: center;
-  width: 80rem;
+.slide_wrap .swiper-slide-active .page-title {
+  position: absolute;
+  top: 50%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 7rem;
   font-family: var(--font-family-cinzel);
   font-weight: 300;
+  white-space: nowrap;
+  letter-spacing: 1.4rem;
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+.slide_wrap .swiper-slide-active .image_wrap:hover h2.page-title {
+  display: inline-block;
+  width: auto;
+  font-size: 3rem;
   letter-spacing: 1rem;
   white-space: nowrap;
   transition: all 1s;
   z-index: 1;
 }
 
+/* 슬라이드 공통 스타일 */
 .section_wrap .section-contents .slide_wrap .list li .product-number {
   position: absolute;
   top: 6rem;
-  left: -6rem;
+  left: -7rem;
   font-size: 1.5rem;
   transform: rotate(-90deg);
   color: var(--color-white);
@@ -215,7 +227,7 @@ main .section_wrap .section-contents {
 .section_wrap .section-contents .slide_wrap ul.list li .page-number {
   position: absolute;
   top: 5rem;
-  right: -4rem;
+  right: -5rem;
   font-size: 1.5rem;
   transform: rotate(-90deg);
   color: var(--color-white);
@@ -260,4 +272,27 @@ main .section_wrap .section-contents {
   margin: 0 1.5rem;
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
+}
+
+/* 라이브러리 스타일 */
+
+.swiper {
+  width: 50%;
+  height: 50%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
 }
