@@ -1,37 +1,37 @@
 .header {
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
   width: 100%;
   padding: 4rem 0;
   background: transparent;
-  z-index: 1;
+  z-index: 100;
 }
 
-.header-inner {
+.header .header-inner_wrap {
   width: 95%;
   margin: 0 auto;
   text-align: center;
 }
 
-.logo {
-  float: left;
-  font-family: var(--font-family-cormorant);
+.header .header-inner_wrap a {
   color: var(--color-white);
-  font-size: 2.8rem;
   letter-spacing: 0.2rem;
-  text-transform: uppercase;
+  font-family: var(--font-family-cormorant);
 }
 
+.header .header-inner_wrap a.logo {
+  float: left;
+  font-size: 2.8rem;
+}
 
-.apply {
+.header .header-inner_wrap a:last-child {
   display: block;
   float: right;
   font-size: 1.7rem;
-  text-transform: uppercase;
 }
 
-.button-gnb {
+.header .header-inner_wrap button {
   cursor: pointer;
   width: 6rem;
   height: 2rem;
@@ -39,7 +39,7 @@
   background: transparent;
 }
 
-.button-gnb span {
+.header .header-inner_wrap button span {
   position: relative;
   display: block;
   width: 100%;
@@ -47,15 +47,16 @@
   background: var(--color-white);
 }
 
-.button-gnb .a {
+.header .header-inner_wrap button .a {
   top: 0.5rem;
 }
 
-.button-gnb .b {
+.header .header-inner_wrap button .b {
   bottom: 0.5rem;
 }
 
-.main {
+/* index 영역 */
+main {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,28 +64,30 @@
   height: 100%;
 }
 
-.section-wrap {
+main .section_wrap {
   top: 0;
   left: 0;
   height: 100%;
   background: #272727;
 }
 
-.section-video {
+main .section_wrap .section-video {
   position: relative;
-  overflow: hidden;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
   transition: all 1s;
 }
 
-.section-video .video {
+main .section_wrap .section-video .video {
   position: absolute;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transform: scale(1.1);
 }
 
-.main-desc {
+main .section_wrap .section-video h2.title {
   position: relative;
   top: 50%;
   left: 50%;
@@ -97,7 +100,7 @@
   z-index: 10;
 }
 
-.text-wrap {
+main .section_wrap .section-video .text_wrap {
   position: absolute;
   display: inline-block;
   width: 38%;
@@ -126,7 +129,7 @@ main .section_wrap .section-video p::after {
 }
 
 /* contents 영역 */
-.section-contents {
+.section_wrap .section-contents {
   position: relative;
   width: 100%;
   height: 85%;
