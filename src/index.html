@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./stylesheet/reset.css" />
     <link rel="stylesheet" href="./stylesheet/index.css" />
-    <link rel="stylesheet" href="./stylesheet/motion.css" />
-    <link rel="stylesheet" href="./stylesheet/animation.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <script src="./js/library/jquery-3.6.0.min.js"></script>
     <script src="./js/handleSlide.js" defer></script>
@@ -17,29 +14,35 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-inner_wrap">
-        <a href="#" class="logo" title="홈">MORALIA</a>
-        <button class="button_gnb" type="button" aria-label="메뉴">
+      <div class="header-inner">
+        <a href="#" class="logo" >
+          <span class="blind">홈</span>
+          moralia
+        </a>
+        <button type="button" class="button-gnb">
           <span class="a"></span>
           <span class="b"></span>
         </button>
-        <a href="#" title="상담 신청">GET IN TOUCH</a>
+        <a href="#" class="apply" target="_blank" title="새창열기">
+          <span class="blind">상담신청</span>
+          get in touch
+        </a>
       </div>
     </header>
-    <main>
-      <div class="section_wrap">
+    <main class="main">
+      <div class="section-wrap">
         <!-- index 영역 -->
         <section class="section-video">
           <video class="video" autoplay muted loop>
             <source src="./assets/video/final-20211206-1648479460L6wFq.mp4" />
           </video>
-          <h2 class="title">
+          <h2 class="main-desc">
             Discover how Moralia<br />
             Brings contemporary<br />
             refinement into every room<br />
             of your home
           </h2>
-          <div class="text_wrap">
+          <div class="text-wrap">
             <p>
               We see your entire home as an ecosystem where everything is connected and flows into
               each other in a harmony of perfect movements. Taking this approach, we create unique
